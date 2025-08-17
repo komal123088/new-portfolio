@@ -1,0 +1,171 @@
+.skills-section {
+  background-color: #fff;
+  padding: 60px 20px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+/* Heading */
+.skills-header h2 {
+  position: relative;
+  font-size: 64px;
+  font-weight: bold;
+  color: #7a38f2;
+  padding: 20px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  width: 90%;
+  border-bottom: 1px solid #edeeff;
+}
+
+.skills-header .highlight {
+  color: #7a38f2;
+  font-weight: 700;
+}
+
+/* Heading Icon */
+.skill-icon {
+  font-size: 24px;
+  transform: rotate(-10deg);
+  position: absolute;
+  left: 7%;
+  bottom: 55%;
+}
+
+/* Heading Dots */
+.dot1 {
+  position: absolute;
+  top: 15%;
+  left: -3%;
+}
+.dot1 img {
+  height: 40px;
+  width: 50px;
+}
+
+/* Skill Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  justify-items: center;
+  margin: 0 auto;
+}
+
+.skill-circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-circle p {
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  max-width: 120px;
+}
+
+/* SVG Circle Styles */
+.circular-chart {
+  width: 120px;
+  height: 120px;
+  transform: rotate(-90deg);
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #f0f0f0;
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke: #6c63ff;
+  stroke-width: 4;
+  stroke-linecap: round;
+  transition: stroke-dasharray 1s ease;
+}
+
+.percentage {
+  fill: #333;
+  font-size: 8px;
+  font-weight: bold;
+  text-anchor: middle;
+  dominant-baseline: middle;
+}
+
+/* Decorative Lines */
+.lines {
+  position: absolute;
+  top: 55%;
+  right: -7%;
+}
+
+.lines2 {
+  position: absolute;
+  bottom: 0;
+}
+
+/* ========== Responsive ========== */
+@media screen and (max-width: 1024px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr); /* Tablet = 2 columns */
+    gap: 30px;
+  }
+
+  .skills-header h2 {
+    font-size: 48px;
+    margin-left: 10px;
+  }
+
+  .skill-icon {
+    left: 10%;
+    bottom: 50%;
+  }
+
+  /* .dot1 {
+    left: 0;
+  } */
+
+  .lines {
+    top: 60%;
+    right: -10%;
+    width: 120px;
+  }
+
+  .lines2 {
+    width: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .skills-header h2 {
+    font-size: 38px;
+    padding: 10px;
+    margin-left: 0;
+  }
+
+  .skill-icon {
+    left: 5%;
+    bottom: 30%;
+    width: 30px;
+  }
+  .dot1 {
+    left: -13%;
+  }
+  .lines img {
+    display: none;
+  }
+
+  .lines2 {
+    bottom: 40%;
+    left: -10%;
+  }
+}

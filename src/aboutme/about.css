@@ -1,0 +1,201 @@
+.aboutme-container {
+  position: relative;
+  padding: 80px 20px 120px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.aboutme-bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.aboutme-title {
+  color: white;
+  font-size: 54px;
+  margin-bottom: 100px;
+  position: relative;
+  z-index: 1;
+}
+.aboutdots {
+  position: absolute;
+  left: 0;
+  top: 20%;
+}
+.aboutlines {
+  position: absolute;
+  right: 10%;
+  top: 20%;
+}
+.aboutdots1 {
+  position: absolute;
+  bottom: 10%;
+  right: 0;
+}
+.aboutme-box {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px 40px;
+  border-radius: 20px;
+  z-index: 1;
+  position: relative;
+  max-width: 750px;
+  height: 230px;
+  margin-bottom: 40px;
+  margin-left: 20%;
+  flex-wrap: wrap;
+  background: #fff;
+}
+.aboutme-card {
+  position: absolute;
+  left: 7%;
+  width: 200px;
+}
+.aboutme-icon {
+  width: 90px;
+}
+.aboutme-card h3 {
+  font-size: 44px;
+}
+.aboutme-center {
+  position: absolute;
+  left: 35%;
+  bottom: 80px;
+  height: 230px;
+  border-radius: 25px;
+  color: #fff;
+  width: 170px;
+  background: linear-gradient(90deg, #b224ef 0%, #7579ff 100%);
+}
+.main {
+  position: absolute;
+}
+.main::before {
+  position: absolute;
+  content: "";
+  height: 50px;
+  width: 170px;
+  left: 0;
+  background: #f9d423;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 98%;
+  border-bottom-left-radius: 90%;
+}
+
+.main::after {
+  position: absolute;
+  content: "";
+  height: 50px;
+  width: 170px;
+  left: 0;
+
+  top: 30%;
+  --c: 85;
+
+  aspect-ratio: 3/2;
+  background: red;
+  mask: radial-gradient(
+    calc(var(--c) * 1%) 100% at 50% calc(-100% * cos(asin(50 / var(--c)))),
+    #0000 calc(100% - 1px),
+    #000
+  );
+  clip-path: ellipse(calc(var(--c) * 1%) 100% at top);
+}
+.center-txt {
+  position: absolute;
+  bottom: 10%;
+  left: 22%;
+}
+
+.aboutme-card2 {
+  margin-left: 58%;
+  width: 200px;
+}
+.aboutme-icon2 {
+  width: 90px;
+}
+
+.aboutme-card2 h3 {
+  font-size: 44px;
+}
+
+@media (max-width: 768px) {
+  .aboutme-container .bgimg img {
+    height: 400px;
+  }
+  .aboutme-title {
+    margin-bottom: 0;
+    font-size: 34px;
+  }
+  .aboutme-box {
+    height: 180px;
+    width: 350px;
+    top: 70px;
+    left: -20%;
+  }
+  .aboutme-card,
+  .aboutme-card2 {
+    height: 130px;
+    width: 100px;
+  }
+  .aboutme-card {
+    left: 0;
+  }
+  .aboutme-card2 {
+    margin-right: -20%;
+  }
+  .aboutme-center {
+    top: -25%;
+    height: 150px;
+    width: 100px;
+  }
+  .main::before {
+    height: 30px;
+    width: 100px;
+  }
+  .main::after {
+    width: 100px;
+    height: 40px;
+  }
+  .center-txt {
+    left: 3%;
+  }
+  .aboutme-icon,
+  .aboutme-icon2 {
+    width: 50px;
+  }
+  .aboutme-card h3,
+  .aboutme-card2 h3 {
+    font-size: 22px;
+    margin-left: 15px;
+  }
+  .aboutme-card p,
+  .aboutme-card2 p {
+    margin-left: 5px;
+  }
+  .aboutme-center h3,
+  p {
+    margin-bottom: -6px;
+  }
+  .aboutdots img {
+    width: 30px;
+    height: 20px;
+  }
+  .aboutlines {
+    top: 28%;
+    right: -2%;
+  }
+  .aboutlines img {
+    width: 60px;
+    height: 60px;
+  }
+  .aboutdots1 img {
+    height: 30px;
+    width: 50px;
+  }
+}
